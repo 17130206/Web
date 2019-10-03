@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,15 +49,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<ul class="submenu">
 						<li><a href="index.html" class="active">Home</a></li>
 						<li><a href="#about">About Me</a></li>
-						<li><a href="">Exercise</a>
-				<ul class="sub-menu">
-                    <li><a href="Exercise.html">Lab1</a></li>
-                    <li><a href="#">Lab2</a></li>
-                    <li><a href="#">Lab3</a></li>
-                    <li><a href="#">Lab4</a></li>
-                    <li><a href="#">Lab5</a></li>
-
-                </ul></li>
+						<li><a href="#experience">Exercise</li>
 						
 					</ul>
 				</li>
@@ -140,6 +133,94 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
 </section>
 <!-- //about -->
+<!-- process -->
+<section class="experience py-5" id="experience">
+	<div class="container py-3">
+		<p class="paragraph">work experience</p>
+		<h3 class="heading mb-sm-5 mb-4">My Exercise</h3>
+		<div class="middile-inner-con">
+			<div class="tab-main mx-auto">
+
+				<input id="tab1" type="radio" name="tabs" checked>
+				<label for="tab1"><img src="images/s4.png" alt="" class="img-fluid" /> Lab1</label>
+
+				<input id="tab2" type="radio" name="tabs">
+				<label for="tab2"><img src="images/s4.png" alt="" class="img-fluid" /> Lab2</label>
+
+				<input id="tab3" type="radio" name="tabs">
+				<label for="tab3"><img src="images/s4.png" alt="" class="img-fluid" /> Lab3</label>
+
+				<input id="tab4" type="radio" name="tabs">
+				<label for="tab3"><img src="images/s4.png" alt="" class="img-fluid" /> Lab4</label>
+
+				<input id="tab5" type="radio" name="tabs">
+				<label for="tab3"><img src="images/s4.png" alt="" class="img-fluid" /> Lab5</label>
+
+				<section id="content1">
+					<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')">Requirement</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Design</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Implement</button>
+</div>
+
+<!-- Tab content -->
+<div id="London" class="tabcontent">
+  
+  <p><h3>1. Yêu cầu</h3>
+Chọn 1 đối tượng bất kỳ trong thế giới thực, vídụ như sinh viên, môn học, giảng viên,… đểt hiết kế trên phần mềm một chức năng trên web đểt hêm, sửa, xóa,tìm kiếm cho đối tượng đó
+
+<h3>2. Upload tất cả lên Azure/github trong menu Lab1 theo thứ tự:</h3>
+Tab Yêu cầu: copy lại nội dung của phần 1 vào đây (trình bày cho đẹp).
+<br>
+Tab Thiết kế: để link tới các file sau đây:
+<br>
+Thiết kế trên giấy (chụp lại ảnh).
+<br>
+Thiết kế trên phần mềm thiết kế.
+<br>
+Tab Hiện thực: chuyển tất cả thiết kế ở trên ở trên sang html.</p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+				</section>
+
+				<section id="content2">
+					
+				</section>
+
+				<section id="content3">
+					
+</section>
+<!-- //process -->
 
 
 
