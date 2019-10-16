@@ -1,9 +1,3 @@
-/*--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
 html,
 body {
     margin: 0;
@@ -108,7 +102,7 @@ ul#menu label span {
 }
 
 ul#menu input {
-    display: none
+    display: none;
 }
 
 /*show the second levele menu of the selected voice*/
@@ -432,7 +426,7 @@ p.sub-meta {
 }
 
 .tab-main input {
-      display: none;
+      display: ;
 }
 
 .tab-main label {
