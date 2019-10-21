@@ -1,3 +1,9 @@
+/*--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
 html,
 body {
     margin: 0;
@@ -432,7 +438,7 @@ p.sub-meta {
 .tab-main label {
     display: inline-block;
     margin: 0 0 -1px;
-    width: 32.8%;
+    width: 10%;
     text-align: left;
     color: #1e272e;
     padding: 0.2em 0em;
@@ -550,4 +556,10 @@ td, th {
 
 tr:nth-child(even) {
   background-color: #fff;
+}
+.tan{
+    background: url(../images/banner.jpg) no-repeat ;
+    background-size: 900;
+    position: relative;
+    color: blue;
 }

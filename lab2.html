@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- css files -->
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' /><!-- bootstrap css -->
+    <link href="css/style.css" rel='stylesheet' type='text/css' /><!-- custom css -->
+    <link href="css/font-awesome.min.css" rel="stylesheet"><!-- fontawesome css -->
+	<!-- //css files -->
+</head>
+<body>
+
+
+<div id="home" class="tan">
+	<section class="experience py-5" id="experience">
+	<div class="container py-3">
+		<p class="paragraph">work experience</p>
+		<h3 class="heading mb-sm-5 mb-4">My Exercise</h3>
+		<div class="middile-inner-con">
+			<div class="tab-main mx-auto">
+
+				<a href="lab1.html">
+        <label for="tab1"><img src="images/s4.png" alt="" class="img-fluid" width="40" /> Lab1</label></a>
+
+        <a href="lab2.html">
+        <label for="tab2"><img src="images/s4.png" alt="" class="img-fluid" width="40"/> Lab2</label></a>
+
+        <a href="lab.html">
+        <label for="tab3"><img src="images/s4.png" alt="" class="img-fluid" width="40"/> Lab3</label></a>
+
+        <a href="lab.html">
+        <label for="tab3"><img src="images/s4.png" alt="" class="img-fluid" width="40" /> Lab4</label></a>
+
+				
+<!-- Lab2 -->
+
+
+					<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 's')">Requirement</button>
+  <button class="tablinks" onclick="openCity(event, 'ss')">Uesr Scenarion</button>
+  <button class="tablinks" onclick="openCity(event, 'sss')">Design</button>
+  <button class="tablinks" onclick="openCity(event, 'ssss')">Implement</button>
+
+</div>
+<div id="s" class="tabcontent">
+  <p><(1) Tạo 1 user scenario</p><br>
+
+(2) Chọn 1 bước trong user scenario để thiết kế 1 form giao diện Web trên công cụ thiết kế đã chọn
+
+. Sau đó tạo ra file html tương ứng cho thiết kế này<br>
+
+Upload lênAzure / github: trong file html có chèn hình ảnh của user scenario ở (1) và đường dẫn của file thiết kế ở (2).</p>
+</div>
+
+<div id="ss" class="tabcontent">
+<p>
+  Các bước thực hiện để mua sản phẩm:
+</p>
+<br>
+<img src="images/lab2a.png">
+<a href="images/lab2a.png" download="lab2a.png">
+    <img src="images/download.png" alt="download" width="30" height="30"></a></div>
+
+<div id="sss" class="tabcontent">
+  <p><h3>1.Thiêt kế tay</h3></p><br>
+  <img src="images/lab2b.png" height="500" width="800"><br>
+  <a href="images/lab2b.png" download="lab2b.png">
+    <img src="images/download.png" alt="download" width="30" height="30"></a>
+  <p><h3>2.Figma</h3></p><br>
+  <img src="images/lab2.png">
+  <a href="images/lab2.png" download="lab2.png">
+    <img src="images/download.png" alt="download" width="30" height="30"></a>
+</div>
+
+			
+
+
+</div>
+  <script>
+function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+</script>
+</table>
+</body>
+</html>
