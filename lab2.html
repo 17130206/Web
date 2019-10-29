@@ -1,42 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<!-- css files -->
+  <title></title>
+  <meta charset="UTF-8">
+  <!-- css files -->
     <link href="css/bootstrap.css" rel='stylesheet' type='text/css' /><!-- bootstrap css -->
     <link href="css/style.css" rel='stylesheet' type='text/css' /><!-- custom css -->
     <link href="css/font-awesome.min.css" rel="stylesheet"><!-- fontawesome css -->
-	<!-- //css files -->
+  <!-- //css files -->
+
 </head>
 <body>
+  <header>
+  <nav class="navbar">
+    <div class="container">
+      
+
+      <!-- menu -->
+      
+          <ul class="menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About </a></li>
+            <li><a href="exercise.html">Exercise</li>
+            
+          </ul>
+      
+      <!-- //menu -->
+
+    </div>
+  </nav>
+</header>
 
 
-<div id="home" class="tan">
-	<section class="experience py-5" id="experience">
-	<div class="container py-3">
-		<p class="paragraph">work experience</p>
-		<h3 class="heading mb-sm-5 mb-4">My Exercise</h3>
-		<div class="middile-inner-con">
-			<div class="tab-main mx-auto">
 
-				<a href="lab1.html">
-        <label for="tab1"><img src="images/s4.png" alt="" class="img-fluid" width="40" /> Lab1</label></a>
+
+  <div class="container py-3">
+    <p class="paragraph">work experience</p>
+    <h3 class="heading mb-sm-5 mb-4">My Exercise</h3><br>
+    <div class="middile-inner-con">
+      <div class="tab-main mx-auto">
+
+        <a href="lab1.html">
+        <label for="tab1"> Lab1</label></a>
 
         <a href="lab2.html">
-        <label for="tab2"><img src="images/s4.png" alt="" class="img-fluid" width="40"/> Lab2</label></a>
+        <label for="tab2"> Lab2</label></a>
+
+        <a href="lab3.html">
+        <label for="tab3"> Lab3</label></a>
 
         <a href="lab.html">
-        <label for="tab3"><img src="images/s4.png" alt="" class="img-fluid" width="40"/> Lab3</label></a>
-
-        <a href="lab.html">
-        <label for="tab3"><img src="images/s4.png" alt="" class="img-fluid" width="40" /> Lab4</label></a>
-
-				
+        <label for="tab3"> Lab4</label></a>
+</div></div>
+        
 <!-- Lab2 -->
 
 
-					<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 's')">Requirement</button>
+          <div class="tab">
+  <button class="tablinks" onclick="openCity(event, 's')" id="defaultOpen">Requirement</button>
   <button class="tablinks" onclick="openCity(event, 'ss')">Uesr Scenarion</button>
   <button class="tablinks" onclick="openCity(event, 'sss')">Design</button>
   <button class="tablinks" onclick="openCity(event, 'ssss')">Implement</button>
@@ -62,20 +83,38 @@ Upload lênAzure / github: trong file html có chèn hình ảnh của user scen
     <img src="images/download.png" alt="download" width="30" height="30"></a></div>
 
 <div id="sss" class="tabcontent">
-  <p><h3>1.Thiêt kế tay</h3></p><br>
+  <p>1.Thiêt kế tay</p><br>
   <img src="images/lab2b.png" height="500" width="800"><br>
   <a href="images/lab2b.png" download="lab2b.png">
     <img src="images/download.png" alt="download" width="30" height="30"></a>
-  <p><h3>2.Figma</h3></p><br>
+  <p>2.Figma</p><br>
   <img src="images/lab2.png">
   <a href="images/lab2.png" download="lab2.png">
-    <img src="images/download.png" alt="download" width="30" height="30"></a>
+    <img src="images/download.png" alt="download" width="30" height="30"></a><br>
+    <a href="lab2.zip" download="lab2.zip"><button style="padding: 10px; "> Download All </button></a>
 </div>
 
-			
+<div id="ssss" class="tabcontent">
+ <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-5 p-0">
+        <img src="images/ao1.png" alt="" class="img-fluid" height="300" style="padding-left: 40px" />
+      </div>
+      <div class="col-lg-6">
+        <p><h5><strong>Chi tiết sản phẩm</strong></h5></p><br><br>
+        Mã sản phẩm: 1713<br><br>
+        Mô tả sản phẩm: Thời trang, phong cách<br><br>
+        Thành phần: Cotton<br><br>
+        Size: S, M<br><br>
+        Giá: 200.000đ<br>
+        <br><br><br>
+        <input type="submit" value="MUA"/>
+        </div>
 
+     </div>
+   </div>
+  
 
-</div>
   <script>
 function openCity(evt, cityName) {
   // Declare all variables
@@ -97,8 +136,7 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
-
+document.getElementById("defaultOpen").click();
 </script>
-</table>
 </body>
 </html>

@@ -1,42 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<!-- css files -->
+  <title></title>
+  <meta charset="UTF-8">
+  <!-- css files -->
     <link href="css/bootstrap.css" rel='stylesheet' type='text/css' /><!-- bootstrap css -->
     <link href="css/style.css" rel='stylesheet' type='text/css' /><!-- custom css -->
     <link href="css/font-awesome.min.css" rel="stylesheet"><!-- fontawesome css -->
-	<!-- //css files -->
+  <!-- //css files -->
+
 </head>
 <body>
+  <header>
+  <nav class="navbar">
+    <div class="container">
+      
+
+      <!-- menu -->
+      
+          <ul class="menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About </a></li>
+            <li><a href="exercise.html">Exercise</li>
+            
+          </ul>
+      
+      <!-- //menu -->
+
+    </div>
+  </nav>
+</header>
 
 
-<div id="home" class="tan">
-	<section class="experience py-5" id="experience">
-	<div class="container py-3">
-		<p class="paragraph">work experience</p>
-		<h3 class="heading mb-sm-5 mb-4">My Exercise</h3>
-		<div class="middile-inner-con">
-			<div class="tab-main mx-auto">
 
-				<a href="lab1.html">
-        <label for="tab1"><img src="images/s4.png" alt="" class="img-fluid" width="40" /> Lab1</label></a>
+  <section class="experience py-5" id="experience">
+  <div class="container py-3">
+    <p class="paragraph">work experience</p>
+    <h3 class="heading mb-sm-5 mb-4">My Exercise</h3><br>
+    <div class="middile-inner-con">
+      <div class="tab-main mx-auto">
+
+        
+        <a href="lab1.html">
+        <label for="tab1"> Lab1</label></a>
 
         <a href="lab2.html">
-        <label for="tab2"><img src="images/s4.png" alt="" class="img-fluid" width="40"/> Lab2</label></a>
+        <label for="tab2"> Lab2</label></a>
+
+        <a href="lab3.html">
+        <label for="tab3"> Lab3</label></a>
 
         <a href="lab.html">
-        <label for="tab3"><img src="images/s4.png" alt="" class="img-fluid" width="40"/> Lab3</label></a>
+        <label for="tab3"> Lab4</label></a>
 
-        <a href="lab.html">
-        <label for="tab3"><img src="images/s4.png" alt="" class="img-fluid" width="40" /> Lab4</label></a>
 
-				
+        
 <!-- Lab1 -->
 
 
-					<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')">Requirement</button>
+          <div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Requirement</button>
   <button class="tablinks" onclick="openCity(event, 'Paris')">Design</button>
   <button class="tablinks" onclick="openCity(event, 'Tokyo')">Implement</button>
 </div>
@@ -45,10 +68,10 @@
 <!-- Tab content -->
 <div id="London" class="tabcontent">
   
-  <p><h3>1. Yêu cầu</h3>
-Chọn 1 đối tượng bất kỳ trong thế giới thực, vídụ như sinh viên, môn học, giảng viên,… đểt hiết kế trên phần mềm một chức năng trên web đểt hêm, sửa, xóa,tìm kiếm cho đối tượng đó
+  <p><strong>1. Yêu cầu</strong><br>
+Chọn 1 đối tượng bất kỳ trong thế giới thực, vídụ như sinh viên, môn học, giảng viên,… đểt hiết kế trên phần mềm một chức năng trên web đểt hêm, sửa, xóa,tìm kiếm cho đối tượng đó<br>
 
-<h3>2. Upload tất cả lên Azure/github trong menu Lab1 theo thứ tự:</h3>
+<strong>2. Upload tất cả lên Azure/github trong menu Lab1 theo thứ tự:</strong><br>
 Tab Yêu cầu: copy lại nội dung của phần 1 vào đây (trình bày cho đẹp).
 <br>
 Tab Thiết kế: để link tới các file sau đây:
@@ -61,21 +84,24 @@ Tab Hiện thực: chuyển tất cả thiết kế ở trên ở trên sang htm
 </div>
 
 <div id="Paris" class="tabcontent">
-	<p><h3>1.Thiết kế trên giấy </h3></p>
-	<img src="images/q1.png" height="600" width="800" />
-	<a href="images/q1.png" download="q1.png">
-		<img src="images/download.png" alt="download" width="30" height="30">
-	</a>
-	<p><h3>2.Thiết kế trên figma </h3></p>
-	<img src="images/2.png" height="600" width="800" />
-	<a href="images/2.png" download="2.png">
-		<img src="images/download.png" alt="download" width="30" height="30"></a>
+  <p><strong>1.Thiết kế trên giấy </strong></p>
+  <img src="images/q1.png" height="600" width="800" />
+  <a href="images/q1.png" download="q1.png">
+    <img src="images/download.png" alt="download" width="30" height="30">
+  </a>
+  <p><strong>2.Thiết kế trên figma </strong></p>
+  <img src="images/2.png" height="600" width="800" />
+  <a href="images/2.png" download="2.png">
+    <img src="images/download.png" alt="download" width="30" height="30"></a><br>
+
+      <a href="lab1.zip" download="lab1.zip"><button style="padding: 10px; "> Download All </button></a>
+    
   
 </div>
 
 <div id="Tokyo" class="tabcontent">
-	<form action="/action_page.php">
-		<p><h3>ADD STUDENT</h3></p>
+  <form action="/action_page.php">
+    <p><h5>ADD STUDENT</h5></p>
   Student ID:<br>
   <input type="text" name="lastname" value="">
   <br>
@@ -98,14 +124,13 @@ Tab Hiện thực: chuyển tất cả thiết kế ở trên ở trên sang htm
   <input type="text" name="lastname" value="">
   <br>
   <br>
-  <input type="submit" value="Add">
+  <input type="submit" value="ADD">
  </form>
  <br>
- <a href="lap1.html" download="download">
-		<img src="images/download.png" alt="download" width="30" height="30"></a>
+ 
  <hr/>
  <form action="/action_page.php">
-		<p><h3>EDIT</h3></p>
+    <p><h5>EDIT</h5></p>
   Student ID:<br>
   <input type="text" name="lastname" value="">
   <br>
@@ -128,60 +153,56 @@ Tab Hiện thực: chuyển tất cả thiết kế ở trên ở trên sang htm
   <input type="text" name="lastname" value="">
   <br>
   <br>
-  <input type="submit" value="Comfirm">
+  <input type="submit" value="EDIT">
  </form>
  <br>
-  <a href="lap1.html" download="download">
-		<img src="images/download.png" alt="download" width="30" height="30"></a>
+  
  <hr/>
- <p><h3><center>Home</center></h3></p>
+ <p><h5><center>Home</center></h5></p>
  <br><form>
-  StudenID:<br>
+  Student ID:<br>
   <input type="text" name="lastname" value="">
   <br>
  
-  <input type="submit" value="Search"></form>
+  <input type="submit" value="SEARCH"></form>
   <br>
   <table>
-  	<tr>
-  		<th>STT</th>
-  		<th>ID</th>
-  		<th>Full name</th>
-  		<th>Gender</th>
-  		<th>Address</th>
-  		<th></th>
-  	</tr>
-  	<tr>
-  		<td>1</td>
-  		<td>17130206</td>
-  		<td>Cao Huỳnh Minh Tân</td>
-  		<td>Nam</td>
-  		<td>Biên hòa - Đồng nai</td>
-  		<td></td>
-  	</tr>
-  	<tr>
-  		<td>1</td>
-  		<td>17130206</td>
-  		<td>Cao Huỳnh Minh Tân</td>
-  		<td>Nam</td>
-  		<td>Biên hòa - Đồng nai</td>
-  		<td></td>
-  	</tr>
-  	<tr>
-  		<td>1</td>
-  		<td>17130206</td>
-  		<td>Cao Huỳnh Minh Tân</td>
-  		<td>Nam</td>
-  		<td>Biên hòa - Đồng nai</td>
-  		<td></td>
-  	</tr>  </table>
- <a href="lap1a.html" download="download">
-		<img src="images/download.png" alt="download" width="30" height="30"></a>
+    <tr>
+      <th></th>
+      <th>Student ID</th>
+      <th>Full name</th>
+      <th>Gender</th>
+      <th>Address</th>
+      <th></th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>17130206</td>
+      <td>Cao Huỳnh Minh Tân</td>
+      <td>Nam</td>
+      <td>Biên hòa - Đồng nai</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>17130207</td>
+      <td>Nguyễn Minh Tâm</td>
+      <td>Nữ</td>
+      <td>TP.Hồ Chí Minh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>17130208</td>
+      <td>Trần Văn Tánh</td>
+      <td>Nam</td>
+      <td>Hà Nội</td>
+      <td></td>
+    </tr>  </table>
+ 
+
+
 </div>
-
-			
-
-
 </div>
   <script>
 function openCity(evt, cityName) {
@@ -202,8 +223,10 @@ function openCity(evt, cityName) {
 
   // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
+  evt.currentTarget.className += " active";}
+  // Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
 
 </script>
 </table>
