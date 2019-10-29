@@ -1,289 +1,531 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-  <meta charset="UTF-8">
-    <!-- css files -->
-    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' /><!-- bootstrap css -->
-    <link href="css/style.css" rel='stylesheet' type='text/css' /><!-- custom css -->
-    <link href="css/font-awesome.min.css" rel="stylesheet"><!-- fontawesome css -->
 
-    <!-- //css files -->
+html,
+body {
+    margin: 0;
+    font-size: 100%;
+    background: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+}
 
-<style>
+body a {
+    text-decoration: none;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+
+}
+html {
+  scroll-behavior: smooth;
+}
+body img {
+    max-width: 100%;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="text"],
+input[type="email"],
+input[type="search"] {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+p {
+    margin: 0;
+    line-height: 2em;
+    letter-spacing: 1px;
+}
+
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: ;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
-li {
-  float: left;
+/*--/navbar--*/
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 9;
 }
+/* menu */
+ul.menu {
+    position: absolute;
+    /* top: 2%; */
+    /* width: 3em; */
+    /* height: 3em; */
+    margin: 0;
+    /* background: rgba(21, 30, 37, 0.32); */
+    color: #fff;
+    z-index: 99;
+    right: 14%;
+    font-size: 20px;
 
-li a {
-  display: inline-block;
-  color: black;
-  text-align: center;
-  padding: 14px 70px;
-  text-decoration: none;
 }
-
-
-</style>
-
-</head>
-<body>
-  <header>
-  <nav class="navbar">
-    <div class="container">
-      
-
-      <!-- menu -->
-      
-          <ul class="menu">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About </a></li>
-            <li><a href="exercise.html">Exercise</li>
-            
-          </ul>
-      
-      <!-- //menu -->
-
-    </div>
-  </nav>
-</header>
-
-
-
-
-    <div class="container py-3">
-        <p class="paragraph">work experience</p>
-        <h3 class="heading mb-sm-5 mb-4">My Exercise</h3><br>
-        <div class="middile-inner-con">
-            <div class="tab-main mx-auto">
-
-                
-        <a href="lab1.html">
-        <label for="tab1"> Lab1</label></a>
-
-        <a href="lab2.html">
-        <label for="tab2"> Lab2</label></a>
-
-        <a href="lab3.html">
-        <label for="tab3"> Lab3</label></a>
-
-        <a href="lab.html">
-        <label for="tab3"> Lab4</label></a>
-</div></div>
-
-
-                
-<!-- Lab2 -->
-
-
-                    <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'v')"id="defaultOpen">Requirement</button>
-  <button class="tablinks" onclick="openCity(event, 'vv')">Ex1</button>
-  <button class="tablinks" onclick="openCity(event, 'vvv')">Ex2</button>
-</div>
-
-<div id="v" class="tabcontent">
-    <p><strong>1.Trong menu Labs, tạo 1 menu Lab3 (file lab3.html) sau đó tạo 2 tab Ex1, Ex2.<br>
-
--Ex1: Thiết kế một trang Web đơn giản sử dụng mẫu F-pattern ==> chuyển sang html (ex1.html).<br>
-
--Ex2: Thiết kế một trang Web sử dụng mẫu Z-pattern ==> chuyển sang html (ex2.html).<br>
-
--Với cả Ex1, Ex2: Tạo 2 tab Design và Implementation:</strong><br>
-
-Design: chụp lại hình ảnh để có cái nhìn tổng quan về file thiết kế, có nút Download để download file thiết kế về nếu muốn.--><br>
-
-Implementation: nội dung phần hiện thực trên html.</p>
-    </div>
-<!-- ex1 -->
-    <div id="vv" class="tabcontent">
-        <div class="tab1">
-  <button class="tablinks1" onclick="openCity1(event, 'b')"id="defaultOpen1">Design</button>
-  <button class="tablinks1" onclick="openCity1(event, 'bb')">Implment</button>
-        </div>
-
-        <div id="b" class="tabcontent1">
-            <p><strong>Thiết kế bằng tay</strong></p><br>
-            <img src="images/lab3aa.jpg">
-<a href="images/lab3aa.jpg" download="lab3aa.jpg">
-    <img src="images/download.png" alt="download" width="30" height="30"></a><br>
-
-    <p><strong>Figma</strong></p><br>
-            <img src="images/lab3a.png">
-<a href="images/lab3a.png" download="lab3a.png">
-    <img src="images/download.png" alt="download" width="30" height="30"></a><br>
-<a href="lab3a.zip" download="lab3a.zip"><button style="padding: 10px; "> Download All </button></a>
-
-        </div>
-        <div id="bb" class="tabcontent1">
-
-            <img src="images/logoyame.png" height="60" width="50"><i> (Mua bán quần áo online số 1 việt nam)</i>&nbsp; &#160;&nbsp;&nbsp;
-            <a href=""> <strong>Áo Thun </strong> </a>&nbsp; &#160;&nbsp;&nbsp;<a href=""><strong> Áo Sơ Mi</strong></a>&nbsp;&nbsp;
-            <input type="text" name="" style="margin-right: 0px"/>
-            <input type="button" name="" value="Tìm kiếm" />
-            <hr width="100%" size= "5px"color="black">
-            <br>
- <p><strong><h5>Áo Thun Mỹ</h5></strong></p><br>
- <div class="container">
-  <div class="row">
-    <div class="col-lg-6">
- <strong style="color: red">Chi tiết sản phẩm:</strong><br>
- <p style="padding-left: 20px">Mã sản phẩm: 1713 <br>
-Mô tả sản phẩm:<br>
-thời trang, phong cách<br>
-Thành phần:Cotton<br>
-Size:S,M<br>
-Giá:200.000đ<br></p>
-<strong style="color: red">Khuyến mãi:</strong><br>
-<p style="padding-left: 20px">Mua 1 tặng 1 (đến hết ngày 1/1/2020)</p>
-<input type="submit" value="Mua"  style="padding:20px; margin-left: 40px">
-
-    </div>
-    <div class="col-lg-6">
-      <img src="images/ao1.png" height="350">
-    </div>
+ul.menu li{
+    display: inline-table;
     
-  </div>
-</div>
+    width: 90px;
+
+}
+
+/* //menu */
+.navbar {
+    padding: 1em 2em;
+    border-bottom: 1px solid rgba(243, 242, 242, 0.41);
+}
+
+h1.wthree-logo a {
+    text-transform: capitalize;
+    font-size: 0.9em;
+    font-weight: 400;
+    color: #fff;
+}
+
+h1.wthree-logo a span {
+    font-weight: 800;
+}
 
 
 
-        </div>
-    </div>
-
-    <!-- ex2 -->
-<div id="vvv" class="tabcontent">
-    <div class="tab2">
-  <button class="tablinks2" onclick="openCity2(event, 'y')"id="defaultOpen2">Design</button>
-  <button class="tablinks2" onclick="openCity2(event, 'yy')">Implment</button>
-        </div>
-        <div id="y" class="tabcontent2">
-            <p><strong>Thiết kế bằng tay</strong></p><br>
-            <img src="images/lab3bb.jpg">
-<a href="images/lab3bb.jpg" download="lab3bb.jpg">
-    <img src="images/download.png" alt="download" width="30" height="30"></a><br>
-
-    <p><strong>Figma</strong></p><br>
-            <img src="images/lab3b.png">
-<a href="images/lab3b.png" download="lab3b.png">
-    <img src="images/download.png" alt="download" width="30" height="30"></a><br>
-<a href="lab3b.zip" download="lab3b.zip"><button style="padding: 10px; "> Download All </button></a>
-
-        </div>
-        <div id="yy" class="tabcontent2">
-    <ul>
-        <li><img src="images/logoyame.png" height="60" width="100"></li>
-  <li><a href="#home" class="active"><strong>Áo thun</strong></a></li>
-  <li><a href="#news"><strong>Áo khoác</strong></a></li>
-  <li><a href="#contact"><strong>Áo sơ mi</strong></a></li>
-  <li><a href="#about"><strong>Áo tay dài</strong></a></li>
-</ul>
-<hr width="100%" size= ""color="black">
-<img src="images/hinh4.png" >
-<center>Thời gian: 01/10 - 31/10/2019 Địa điểm: Tất cả các chi nhánh  Shop, kể cả mua Online.</center>
-<div class="container">
-  <div class="row">
-    <div class="col-lg-4">
-        <img src="images/hinh1.png">
-        </div>
-        <div class="col-lg-4">
-            <img src="images/hinh2.png">
-        </div>
-        <div class="col-lg-4">
-            <img src="images/hinh3.png">
-        </div>
-        </div>
 
 
+/* banner */
 
-</div>
- <script>
-function openCity(evt, cityName) {
-  // Declare all variables
-  var i, tabcontent, tablinks;
+.banner-w3pvt {
+  background: url(../images/1.jpg) no-repeat center ;
+  background-size: cover;
+  position: relative;
+}
 
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
+.bnr-txt-w3pvt {
+    margin: 12em 0 9em;
+}
+.banner-w3pvt:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  opacity: 0.9;
+  background: #1e3c72;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2a5298, rgba(30, 60, 114, 0.59));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2a5298, rgba(30, 60, 114, 0.59)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-  // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
+}
+.bnr-w3pvt-txt h2 {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
+}
+.bnr-w3pvt-txt p {
+    color: #eee;
+}
 
-  // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";}
-  // Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+.bnr-w3pvt-txt h6 {
+    font-size: 17px;
+    color: #fff;
+    margin-bottom: 30px;
+    position: relative;
+    text-transform: capitalize;
+}
+
+.bnr-w3pvt-txt h6:after {
+    position: absolute;
+    content: '';
+    width: 8%;
+  height: 1px;
+    background: #fff;
+    left: 0;
+  bottom: -70%
+}
+.bnr-w3pvt-txt h2 span{
+}
+.bnr-w3pvt-txt h4 {
+    text-transform: capitalize;
+    color: #eee;
+    letter-spacing: 1px;
+    font-size: 26px;
+}
+ul.social_section_1info li {
+    display: inline-block;
+}
+ul.social_section_1info a {
+    margin-right: 4px;
+    width: 40px;
+    height: 40px;
+    display: block;
+    background: #3b5fa1;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+ul.social_section_1info a span.fa {
+    color: #fff;
+    font-size: 13.5px;
+    line-height: 40px;
+}
+/* //banner */
+
+/*-- about --*/
+
+.about{
+  position: relative;
+}
+h3.position {
+    position: absolute;
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    transform: rotate(90deg);
+    right: -2%;
+    top: 30%;
+    color: #333;
+}
+.about-right h4.main {
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 1em 0;
+}
+.about-right {
+    padding: 3em;
+}
+.about-right p {
+    font-size: 16px;
+    color: #777;
+}
+a.abt-btn {
+    background: #2a5298;
+    border: 2px solid #2a5298;
+    text-transform: capitalize;
+    color: #fff;
+    padding: 10px 25px;
+    display: inline-block;
+    margin-top: 2em;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.about-right-inner h4 {
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 600;
+    line-height: 38px;
+}
+.about-right-inner p {
+    line-height: 28px;
+}
+.progress-one .progress {
+    height: 0.3rem;
+}
+.progress {
+    font-size: 0.75em;
+    line-height: 8em;
+    text-align: center;
+    background-color: #d6d9da;
+    border-radius: 0.25rem;
+    margin-bottom: 1em;
+}
+.about-right-inner h4.progress-tittle {
+    color: #888;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    margin-bottom: .5em;
+    letter-spacing: 1px;
+    line-height: inherit;
+}
+
+/*-- //about --*/
 
 
-</script>
 
- <script>
-function openCity1(evt, cityName) {
-  // Declare all variables
-  var i, tabcontent, tablinks;
+/*--/tabs --*/
 
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent1");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
+.tech-btm h5 {
+  font-size: 0.9em;
+  line-height: 1.4em;
+  font-weight: 600;
+}
 
-  // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks1");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
+.menu-img-info h5 {
+  font-size: 1.8em;
+  color: #7b7d80;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
+  line-height: 1.4em;
+}
 
-  // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";}
-  // Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen1").click();
+p.sub-meta {
+  color: #1cbbb4;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.text-info-sec p {
+  color: #666;
+  font-size: 17px;
+}
+
+.text-info-sec h3 {
+    font-size: 2.5em;
+    color: #2a5298;
+    font-weight: 300;
+    text-transform: capitalize;
+    letter-spacing: 0;
+}
+.text-info-sec h5 {
+  font-size: 1.4em;
+  color: #333;
+  text-shadow: 0 1px 2px rgba(18, 18, 19, 0.13);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.text-info-sec i {
+    color: #333;
+    font-size: 50px;
+}
+.card {
+    border: none;
+}
+.tab-main img {
+    width: ;
+}
+.tab-main .card img {
+    width: 80px;
+}
+.middile-inner-con h5 {
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: #333;
+}
+.tab-main section {
+    display: none;
+    padding: 2em 0 0;
+    border-top: 1px solid #abc;
+}
+
+.tab-main input {
+      display: ;
+}
+
+.tab-main label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    width: 10%;
+    text-align: left;
+    color: #1e272e;
+    padding: 0.2em 0em;
+    letter-spacing: 1px;
+    background: bottom;
+    font-size: 20px;
+    border-left: 4px solid transparent;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.tab-main span {
+    margin-right: 0.5em;
+}
+
+.tab-main label:before {
+    font-family: fontawesome;
+    font-weight: normal;
+    margin-right: 10px;
+    opacity: 0;
+}
+
+.tab-main label:hover {
+    cursor: pointer;
+}
+
+.tab-main input:checked + label {
+    border-bottom: 1px solid #fff;
+    color: #2a5298;
+    border-bottom: 2px solid;
+    background: #f8f9fa;
+    font-size: 20px;
+    padding: 0.2em 0em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.tab-main #tab1:checked ~ #content1,
+.tab-main #tab2:checked ~ #content2,
+.tab-main #tab3:checked ~ #content3,
+.tab-main #tab4:checked ~ #content4 {
+    display: block;
+}
+
+@media screen and (max-width: 800px) {
+    .tab-main label:before {
+        margin: 0;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .tab-main label {
+        padding: 15px;
+    }
+}
+
+/*--//tabs--*/
 
 
 
-</script>
-
- <script>
-function openCity2(evt, cityName) {
-  // Declare all variables
-  var i, tabcontent, tablinks;
-
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent2");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-
-  // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks2");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-
-  // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";}
-  // Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen2").click();
 
 
 
-</script>
-</div>
-</body>
-</html>
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  
+
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #fff;
+}
+
+.tab1 {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab1 button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab1 button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab1 button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent1 {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;}
+
+
+.tab2 {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab2 button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab2 button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab2 button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent2 {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;}
+
+ 
